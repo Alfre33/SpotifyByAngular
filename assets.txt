@@ -1,0 +1,58 @@
+
+Paso 1 importar los recursos estaticos necesarios,Fuentes ,Estilos,Iconos ,etc.
+
+Fuentes:
+https://fonts.google.com
+Iconos:
+https://iconscout.com/unicons
+
+Fuente utilizada en este proyecto:
+https://fonts.google.com/specimen/Poppins?query=poppins
+
+Paso 2 DataSet:
+Datos de prueba
+
+Paso 3 BrandColor:
+Establecer las variables de diseño :
+Colores,Fuentes,Bordes,etc.
+
+Paso 4 Design Logic:
+- Auth
+- Home
+- Tracks
+- History
+- Favorites
+
+Paso 5 Scaffloding
+"Andamio" ,Estructurar nuestro directorio de archivos para facilitar la mantenibilidad y el escalamiento
+
+
+Paso 6 Routes:
+- LazyLoad Carga perezosa
+
+ Para manejar la experiencia de usuario aumentanmdo la velocidad de carga de la aplicacion.
+ es una carga asicrona o diferida o perezosa,es un patron de diseño que se utiliza para aumentar la velociddad de carga
+ de una aplicacion y consiste en rastrear la inicializacion de algunos componentes u objetos hasta el momento de su utilizacion 
+ Este proceso mejora el rendimiento de las aplicaciuones,puesto que al iniciar la aplicacion solo se iniciaran
+ los componentes del modulo principal(app.modules.ts) y el resto de los componentes se ubican en modulos diferentes 
+ y que se van cargando conforme los vayamos necesitando.
+ Por ejemplo imagina que se tiene una aplicacion para vender bicicletas ,cuando cargamos la aplicacion solo se mostraran
+ las bicicletas en venta ,pero los componentes referidos a la autenticacion (Login,register,password,etc.) se
+ cargan en un modulo AUTH que contiene(login,register,password).De igual forma tendriamos un modulo para las ventas donde 
+ se tendrian los modulos de cesta,listado de pedidos de un usuario ,tarjeta de credito.
+ Para utilizar LazyLoad hacemos un llamado mediante el suistema de rutas de angular y este modulo a su vez
+ tiene rutas hijas que se encargan de cargar el componente solicitado por el usuario
+
+- Optimizacion de la app
+
+Paso 7 Path:
+Establecer alias de rutas de Estructurar
+@Core
+@modules
+
+@El erroba indica que se esta estableciendo un path
+
+Paso 8 Pages:
+- componentes
+- modules
+- services
