@@ -5,10 +5,18 @@ import { SideBarComponent } from './shared/components/side-bar/side-bar.componen
 
 const routes: Routes = [
   {
-    path:'home', //Todo: http://localhost:4200/home
+    path:'auth',
+    loadChildren:()=> import('./modules/auth/auth.module').then( m => m.AuthModule )
+  },
+  {
+    path:'',
     loadChildren:()=> import('./modules/home/home.module').then( m => m.HomeModule )
   },
-  { path: '', component: SideBarComponent },
+  {
+    path:'traks',
+    loadChildren:()=> import('./modules/tracks/tracks.module').then( m => m.TracksModule )
+  }
+
 ];
 
 @NgModule({

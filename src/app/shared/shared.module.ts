@@ -15,7 +15,9 @@ import {MediaPlayerComponent}from './components/media-player/media-player.compon
     CommonModule
   ],
   exports: [
-    SideBarComponent
+    SideBarComponent,
+    HeaderUserComponent,
+    MediaPlayerComponent
   ],
 })
 export class SharedModule { }
